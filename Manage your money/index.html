@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Your Money</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Boot-strap-link -->
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/f9bdb0c80c.js" crossorigin="anonymous"></script>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="section">
+        <h2 class="first-h1 text-center text-primary p-4">Manage Your Money</h2>
+        <div class="mx-5 py-5">
+            <div class="row mp-5 g-4">
+                <div class="col-12 col-md-6">
+                    <img class="first-img img-fluid" src="images/Manage  money2.jpg" alt="">
+                </div>
+                <div class="col-12 col-md-6">
+                    <!-- start-toast -->
+                    <div class="toast show float-end  border-top-0 border-end-0 border-bottom-0 border-5 border-danger"
+                        role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="d-flex">
+                            <div class="toast-header">
+                                <span class="text-danger fs-5">something is wrong</span>
+                            </div>
+                            <button type="button" class="btn-close m-auto me-3" data-bs-dismiss="toast"
+                                aria-label="Close"></button>
+                        </div>
+                    </div>
+                    <!-- end toast -->
+                    <div class="account bg-light py-5">
+                        <h3>Income</h3>
+                        <p>Income: <input type="text" value="10000"></p>
+                        <h3>Expenses</h3>
+                        <p>Food: <input type="text" value="3000"></p>
+                        <p>Rent: <input type="text" value="2000"></p>
+                        <p>Clothes: <input type="text" value="500"></p>
+                        <button type="button" class="btn btn-primary px-4 py-2 fs-4">Calculate</button>
+                        <h3>Total Expenses: <span>5500</span> </h3>
+                        <h3>Balance: <span>4500</span> </h3>
+                        <span class="d-flex align-items-center justify-content-center">
+                            <span class="fs-5 px-1">Save:</span>
+                            <input class="savemoney" type="text" value="500">
+                            <span class="px-1">% </span>
+                            <button type="button" class="btn btn-primary px-4">Save</button>
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- bootstrap-script-link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

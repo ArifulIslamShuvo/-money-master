@@ -1,0 +1,37 @@
+.body{
+    
+}
+section{
+    background-color: rgba(48, 236, 149, 0.322);
+}
+.first-h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+.first-img{
+    height: 100%;
+}
+.account{
+    height: 100%;
+    text-align: center;
+}
+.account p{
+    font-size: 25px;
+    font-weight: 500;
+    padding: 10px;
+}
+.account h3{
+    padding: 5px;
+}
+.account input{
+    background-color:rgba(48, 236, 148, 0.082) ;
+    border-radius: 5px;
+}
+.savemoney{
+    width: 150px;
+}
+.toast-form{
+    width: 300px;
+    height: 300px;
+
+}
