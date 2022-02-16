@@ -21,14 +21,15 @@ section{
     padding: 10px;
 }
 .account h3{
-    padding: 5px;
+    padding: 15px;
 }
-.account input{
+.input{
+    width: 50%;
     background-color:rgba(48, 236, 148, 0.082) ;
     border-radius: 5px;
 }
-.savemoney{
-    width: 150px;
+.save-money{
+    width: 110px;
 }
 .toast-form{
     width: 300px;
