@@ -1,6 +1,6 @@
 function incone() {
     const inputIncome = document.getElementById('income').value;
-    if (inputIncome > 0 && inputIncome != 'string') {
+    if (inputIncome >=0 && inputIncome != 'string') {
         const incomeErroe = document.getElementById('income-error');
         incomeErroe.style.display = 'none';
         return inputIncome ;
@@ -51,10 +51,11 @@ function balance() {
     }
     else {
         const ToalBalance = parseFloat(incomeInput) - parseFloat(totalExpences);
-        document.getElementById('balance').innerText = ToalBalance;
+        const balance = document.getElementById('balance').innerText = ToalBalance;
 
         const errorBalance = document.getElementById('error-balance');
         errorBalance.style.display = 'none';
+        return balance
     }
 
 }
@@ -63,18 +64,41 @@ function balance() {
 function inputSave(){
     const incomeInput = incone()
     const savingInput = document.getElementById('save').value;
-
     const save = (parseFloat(incomeInput) / 100) * parseFloat(savingInput);
-    document.getElementById('saving-amount').innerText = save;
+
+    const PreviousBalance = balance()
+    if(save <= PreviousBalance){
+        const savingAmount =  document.getElementById('saving-amount');
+        const updatesavingAmount = savingAmount.innerText
+        savingAmount.innerText = save
+        const errorSaving = document.getElementById('error-saving');
+        errorSaving.style.display = 'none';
+        return updatesavingAmount;
+    }
+    else{
+        const errorSaving = document.getElementById('error-saving');
+        errorSaving.style.display = 'block';
+    }
 }
+
+// Remaining Balance :
+function Remaining(){
+    const updatesavingAmount = inputSave();
+    const PreviousBalance = balance();
+
+    const Remaining = parseFloat(PreviousBalance) - parseFloat(updatesavingAmount);
+    document.getElementById('remaining').innerText = Remaining;
+}
+
 //  saving amount handling  
 document.getElementById('save-button').addEventListener('click', function () {
-    inputSave()
-    
+    const updatesavingAmount = inputSave();
+    const PreviousBalance = balance();
+    Remaining();
 });
 
 
 
-
+ 
 
 
