@@ -20,27 +20,38 @@
         <h2 class="first-h1 text-center text-primary p-4">Manage Your Money</h2>
         <div class="mx-5 py-5">
             <div class="row mp-5 g-4">
+                <!-- form-image -->
                 <div class="col-12 col-md-6">
                     <img class="first-img img-fluid" src="images/Manage  money2.jpg" alt="">
                 </div>
                 <div class="col-12 col-md-6">
+                    <!-- input-form -->
                     <div class="account bg-light py-5 px-2">
-                        <h3">Income</h3>
+                        <h3>Income</h3>
+                        <!-- income input Error message -->
+                        <h4 id="income-error" class="income-error text-danger">Please enter a positive number</h4>
+
                         <p>Income: <input id="income" class="input" type="text" value="10000"></p>
                         <h3>Expenses</h3>
                         <p>Food: <input id="food" class="input" type="text" value="3000"></p>
                         <p>Rent: <input id="rent" class="input" type="text" value="2000"></p>
+                     <!-- calculate Error message --> 
+                        <h4 id="error-calculate" class="error-calculate text-danger">Please enter a positive number</h4>
+
                         <p>Clothes: <input id="clothes" class="input" type="text" value="500"></p>
                         <button id="calculate" type="button" class="btn btn-primary px-4 py-2 fs-4">Calculate</button>
                         <h3>Total Expenses: <span id="total-expences">5500</span> </h3>
+                        <!-- Balance Error message -->
+                        <h4 id="error-balance" class="error-baance text-danger">Your income is more than your expenses</h4>
+
                         <h3>Balance: <span id="balance">4500</span> </h3>
                         <span class="d-flex align-items-center justify-content-center">
-                            <span class="fs-4 px-1">Save:</span>
-                            <input id="save" class="save-money" type="text" value="500">
-                            <span class="px-1">% </span>
-                            <button id="save-button" type="button" class="btn btn-primary px-4">Save</button>
+                            <span class="fs-3 px-2">Save:</span>
+                            <input id="save" class="save-money" type="text" value="20">
+                            <span class="px-2 fs-5">% </span>
+                            <button id="save-button" type="button" class="btn btn-primary px-3">Save</button>
                         </span>
-                        <h3>Saving Amount: <span id="save-amount">2000</span> </h3>
+                        <h3>Saving Amount: <span id="saving-amount">2000</span> </h3>
                         <h3>Remaining Balance: <span id="remaining">2500</span> </h3>
 
                     </div>

@@ -11,6 +11,8 @@ section{
 .first-img{
     height: 100%;
 }
+
+/* style-input-form */
 .account{
     height: 100%;
     text-align: center;
@@ -34,5 +36,16 @@ section{
 .toast-form{
     width: 300px;
     height: 300px;
-
+}
+/* income input Error message */
+.income-error{
+    display: none;
+}
+/* calculate error message */
+.error-calculate{
+    display: none;
+}
+/* balance error message */
+.error-baance{
+    display: none;
 }
